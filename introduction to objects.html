@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var car = {
+            Model: "Cr-V",
+            company: "Toyota",
+            color: "red",
+        }
+        document.getElementById("demo").innerHTML = " I have a " + car.color + " " + car.company + " with " + car.Model
+        document.write(Math.asin(1))
+        document.write("<br>")
+        document.write(Math.acos(-1))
+        function max(){
+            var max = 0
+            for ( i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max){
+                    max = arguments[i]
+                }
+                
+            }
+            return max
+        }
+        document.getElementById("demo1").innerHTML = max(69, 101, 87, 93, 1)
+    </script>
+</body>
+</html>
